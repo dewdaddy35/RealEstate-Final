@@ -1,0 +1,310 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.container-main{
+    width: 80%;
+        margin-left: 250px;
+        margin-right: auto;
+        align-items: center;
+}
+.flex-container{    /*desktop*/
+        display: flex;
+        background-color: white;
+        color: black;
+}
+@media(max-width:767px) {
+    .flex-container{
+        flex-direction: column;
+    }
+}
+.flex-container-t{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center
+}
+.flex-img{
+        display: flex;
+            background-color: white;
+            color: black;
+            padding-left: 180px;
+            padding-right: 10px;
+            width: 120%;
+        }
+
+        .btn-details{
+    display:block;
+    background-color: green ;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.flex-pad{
+    padding-left: 140px;
+    color: white;
+    
+}
+p{line-height: 1;
+
+    
+}
+h1{
+    text-align: left;
+    padding: 20px;
+}
+
+h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+a{ 
+    margin-right: 10px;
+    color: white;
+}
+img{
+    max-width: 100%;
+}
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-image: url(img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height:300px;
+    text-align: center;
+}
+header .flex-container{
+    margin-left: 8%;
+}
+@media(max-width:768px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        text-align: center;
+    }
+}
+header h1{
+    color:white;
+}
+h2{
+    color: black;
+}
+nav{
+    display: flex;
+    word-spacing: 15px;
+}
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+    }
+}
+header .img{
+    width: 2px
+}
+header p{
+        text-align: left;
+        position: relative; top: 100px;
+        font-size: 20px;
+        padding-left: 10px;
+        }
+/*main*/
+.flex-blue{
+display: flex;
+background-color: beige;
+}
+/*utilities*/
+.more-about{
+    margin-right: 1rem;
+    text-align: justify;
+}
+.more-about img{
+max-width: 100%;
+margin:20px 0;
+}
+.more-about h3{
+    color: black;
+    font-size: 30px;
+    margin: 20px 0;
+}
+@media(max-width:767px){
+    .more-about img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .more-about h3{
+        text-align: center;
+    }
+}
+.more-about p{
+    color: black;
+}
+/*houses*/
+.houses-item{
+    background-color: white;
+    /* padding: 5%; */
+    text-align: left;
+    margin-right: 20px;
+    
+}
+
+.houses-item-text p{
+    display: flex;
+    align-items: flex-start;
+    padding: 0 30px;
+color: black;
+    }
+    .houses-item h3{
+margin: 20px 0;
+}
+.houses-item p.price{
+    color: green;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.flex-houses{
+    display: flex;
+    align-items: flex-start;
+    margin-right: 110px;
+}
+.houses-about{
+    margin-right: 1rem;
+    text-align: justify;
+}
+.houses-about h3{
+    color: black;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.houses-about p{
+    color: black;
+}
+.flex-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex-icon img{
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+/*contact*/
+.contact{
+    text-align: center;
+    /* padding-left: 800px; */
+}
+.contact-p{
+    text-align: center;
+    /* padding-left: 700px; */
+}
+.site-header{
+    /* display: flex; */
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+    }
+}
+.form-container{
+    margin: 10px;
+}
+.form-container-pro{
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.form-container input{
+    display: block;
+    background-color: lightgray;
+    width: 98%;
+    padding: 5px;
+    border: none;
+}
+.form-container-m{
+    display: block;
+    background-color: lightgray;
+    padding: 5px;
+    border: none;
+    border-bottom: 98px;
+}
+/* contact */
+.btn-send {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 0px;
+}
+
+.btn-pad{
+    padding-top: 10px;
+}
+.flex-radio{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    text-align: left;
+    
+}
+.textarea{
+    background-color: lightgray;
+    border: none;
+}
+.select-options{
+    display: block;
+    background-color: lightgray;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+/* footer */
+footer{
+    background-image: url(img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 175px;
+    text-align:center;
+    color: white;
+    
+    
+}
+.footer-h{
+    align-content: left;
+    padding-top: 7%;
+}
+.contactus{display: block;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    padding-block: 5px;
+    padding-inline: 300px;
+}
+.footer-c{
+    padding-top: 5px;
+}
+/*about*/
